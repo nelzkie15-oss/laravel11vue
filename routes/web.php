@@ -16,6 +16,8 @@ use App\Http\Controllers\ProfileController;
 // });
 
 Route::get('/', [MainController::class, 'Index'])->name('main.index');
+Route::get('/about', [MainController::class, 'aboutUs'])->name('main.aboutUs');
+Route::get('/contactus', [MainController::class, 'contactUs'])->name('main.contactUs');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
