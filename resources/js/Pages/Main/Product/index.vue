@@ -12,16 +12,15 @@
                     <td class="px-4 py-2 text-left border">Id</td>
                     <td class="px-4 py-2 text-left border">Name</td>
                     <td class="px-4 py-2 text-left border">Price</td>
-                    <td class="px-4 py-2 text-left border">Action</td>
+                    <!-- <td class="px-4 py-2 text-left border">Action</td> -->
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="px-4 py-2 border">1</td>
                     <td class="px-4 py-2 border">Apple</td>
-                    <td class="px-4 py-2 border">1</td>
                     <td class="px-4 py-2 border">140</td>
-                    <td>
+                    <!-- <td>
                         <Link :href="route('product.index')"
                          class="inline-block p-3 px-2 py-1 mb-4 bg-blue-500 rounded me-2 text-dark">
                          show</Link>
@@ -33,7 +32,7 @@
                          <Link :href="route('product.create')"
                          class="inline-block p-3 px-2 py-1 mb-4 bg-red-500 rounded me-2 text-dark">
                          delete</Link>
-                    </td>
+                    </td> -->
 
                 </tr>
             </tbody>
