@@ -1,10 +1,11 @@
-<<template>
-    <div>
-        <Navbar />
-        <h2>My Contact Us Page</h2>
-    </div>
+<template>
+  <div>
+    <Nav>
+      <h2>My Contact Us Page</h2>
+    </Nav>
+  </div>
 </template>
 
 <script setup>
-   import Navbar from '@/Components/Navbar.vue';
+import Nav from "@/Layouts/MainLayout.vue";
 </script>
