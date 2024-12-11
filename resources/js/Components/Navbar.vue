@@ -8,7 +8,7 @@
             <Link class="text-dark" :href="route('main.index')">Home</Link>
           </li>
           <li class="nav-item">
-            <Link class="text-dark" :href="route('main.aboutUs')">About</Link>
+            <Link class="text-dark" :href="route('main.aboutUs')">About Us</Link>
           </li>
           <li class="nav-item">
             <Link class="text-dark" :href="route('main.contactUs')">Contact Us</Link>
