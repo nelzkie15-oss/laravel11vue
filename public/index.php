@@ -9,7 +9,6 @@ if (file_exists($maintenance = __DIR__.'/../../laravel11vue/storage/framework/ma
     require $maintenance;
 }
 
-
 // Register the Composer autoloader...
 require __DIR__.'/../../laravel11vue/vendor/autoload.php';
 
