@@ -10,9 +10,10 @@ class ProductController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        //
-    }
+     {
+        return Inertia::render('Main/Product/index');
+     }
+
 
     /**
      * Show the form for creating a new resource.
