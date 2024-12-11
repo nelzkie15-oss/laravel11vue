@@ -4,8 +4,8 @@
     <Nav>
         <div class="mx-4 mt-4">
              <h5 class="mb-2">Product Lists</h5>
-             <Link :href="route('products.create')" class="p-3 mt-3 mb-4 text-white bg-green-500 rounded">Add Product</Link>
-        </div><hr>
+             <Link :href="route('products.create')" class="p-2 mt-3 mb-4 text-white bg-green-500 rounded float-end ">Add Product</Link>
+        </div>
     <div class="mx-4 mt-4">
         <table class="w-full bg-white border border-gray-200 shadow">
             <thead>
@@ -23,15 +23,15 @@
                     <td class="px-4 py-2 border">140</td>
                     <td>
                         <Link :href="route('products.create')"
-                         class="inline-block p-3 px-2 py-1 mb-4 bg-blue-500 rounded me-2 text-dark">
+                         class="inline-block p-3 px-2 py-1 mt-3 mb-4 ml-2 text-white bg-blue-500 rounded me-2">
                          show</Link>
 
                          <Link :href="route('products.create')"
-                         class="inline-block p-3 px-2 py-1 mb-4 bg-orange-500 rounded me-2 text-dark">
+                         class="inline-block p-3 px-2 py-1 mt-3 mb-4 text-white bg-orange-500 rounded me-2">
                          edit</Link>
 
                          <Link :href="route('products.create')"
-                         class="inline-block p-3 px-2 py-1 mb-4 bg-red-500 rounded me-2 text-dark">
+                         class="inline-block p-3 px-2 py-1 mt-3 mb-4 text-white bg-red-500 rounded me-2">
                          delete</Link>
                     </td>
 
