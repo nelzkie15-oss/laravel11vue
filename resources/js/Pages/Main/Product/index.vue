@@ -6,6 +6,7 @@
              <h5>Product Lists</h5>
              <Link :href="route('product.create')" class="p-3 mb-4 text-white bg-green-500 rounded">Add Product</Link>
         </div>
+    <div class="mx-4 mt-4">
         <table class="w-full bg-white border border-gray-200 shadow">
             <thead>
                 <tr>
@@ -39,6 +40,7 @@
 
 
         </table>
+    </div>
     </Nav>
   </div>
 </template>
