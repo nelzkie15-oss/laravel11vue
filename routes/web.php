@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 
 // Route::get('/', function () {
@@ -18,6 +19,8 @@ use App\Http\Controllers\ProfileController;
 Route::get('/', [MainController::class, 'Index'])->name('main.index');
 Route::get('/about', [MainController::class, 'aboutUs'])->name('main.aboutUs');
 Route::get('/contactus', [MainController::class, 'contactUs'])->name('main.contactUs');
+
+// Route::resource('/products', [ProductController::class]);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
