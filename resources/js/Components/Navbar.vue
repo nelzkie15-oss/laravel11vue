@@ -1,7 +1,7 @@
 <template>
     <nav class="flex justify-between p-4 bg-gray-200">
          <div class="text-lg">
-            Navbar
+             <Link class="text-dark" :href="route('main.index')">Navbar</Link>
          </div>
         <div>
             <ul class="flex mb-2 gap-x-4 me-auto mb-lg-lg">
