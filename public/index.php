@@ -13,5 +13,5 @@ if (file_exists($maintenance = __DIR__.'/../../laravel11vue/storage/framework/ma
 require __DIR__.'/../../laravel11vue/vendor/autoload.php';
 
 // Bootstrap Laravel and handle the request...
-(require_once __DIR__.'/../bootstrap/app.php')
-    ->handleRequest(Request::capture());
+// (require_once __DIR__.'/../bootstrap/app.php')
+//     ->handleRequest(Request::capture());
