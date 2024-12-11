@@ -3,17 +3,19 @@
          <div class="text-lg">
             Navbar
          </div>
-       <ul class="flex mb-2 gap-x-4 me-auto mb-lg-lg">
-          <li class="nav-item">
-            <Link class="text-dark" :href="route('main.index')">Home</Link>
-          </li>
-          <li class="nav-item">
-            <Link class="text-dark" :href="route('main.aboutUs')">About Us</Link>
-          </li>
-          <li class="nav-item">
-            <Link class="text-dark" :href="route('main.contactUs')">Contact Us</Link>
-          </li>
-       </ul>
+        <div>
+            <ul class="flex mb-2 gap-x-4 me-auto mb-lg-lg">
+                <li class="nav-item">
+                    <Link class="text-dark" :href="route('main.index')">Home</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="text-dark" :href="route('main.aboutUs')">About Us</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="text-dark" :href="route('main.contactUs')">Contact Us</Link>
+                </li>
+            </ul>
+      </div>
     </nav>
 </template>
 
