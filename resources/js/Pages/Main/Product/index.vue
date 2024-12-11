@@ -21,7 +21,7 @@
                     <td class="px-4 py-2 border">1</td>
                     <td class="px-4 py-2 border">Apple</td>
                     <td class="px-4 py-2 border">140</td>
-                    < <td>
+                    <td>
                         <Link :href="route('products.create')"
                          class="inline-block p-3 px-2 py-1 mb-4 bg-blue-500 rounded me-2 text-dark">
                          show</Link>
