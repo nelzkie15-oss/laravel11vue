@@ -21,19 +21,19 @@
                     <td class="px-4 py-2 border">1</td>
                     <td class="px-4 py-2 border">Apple</td>
                     <td class="px-4 py-2 border">140</td>
-                    <!-- <td>
-                        <Link :href="route('product.index')"
+                    < <td>
+                        <Link :href="route('products.create')"
                          class="inline-block p-3 px-2 py-1 mb-4 bg-blue-500 rounded me-2 text-dark">
                          show</Link>
 
-                         <Link :href="route('product.index')"
+                         <Link :href="route('products.create')"
                          class="inline-block p-3 px-2 py-1 mb-4 bg-orange-500 rounded me-2 text-dark">
                          edit</Link>
 
-                         <Link :href="route('product.create')"
+                         <Link :href="route('products.create')"
                          class="inline-block p-3 px-2 py-1 mb-4 bg-red-500 rounded me-2 text-dark">
                          delete</Link>
-                    </td> -->
+                    </td>
 
                 </tr>
             </tbody>
