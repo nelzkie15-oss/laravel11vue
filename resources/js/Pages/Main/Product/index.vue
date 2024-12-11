@@ -2,9 +2,9 @@
  <div>
     <Head title="Product"/>
     <Nav>
-        <div class="mx-4 mt-4">
+        <div class="mx-4 mt-4"><hr>
              <h5>Product Lists</h5>
-             <Link :href="route('products.create')" class="p-3 mb-4 text-white bg-green-500 rounded">Add Product</Link>
+             <Link :href="route('products.create')" class="p-3 mt-3 mb-4 text-white bg-green-500 rounded">Add Product</Link>
         </div>
     <div class="mx-4 mt-4">
         <table class="w-full bg-white border border-gray-200 shadow">
