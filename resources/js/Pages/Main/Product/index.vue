@@ -72,7 +72,7 @@ defineProps({
 const form = useForm({});
 const deleteProduct = (productID) =>{
     if(confirm("Are you sure you want to delete this product?")){
-        form.delete(route('products.delete', productID));
+        form.delete(route('products.destroy', productID));
     }
 }
 </script>
