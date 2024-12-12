@@ -6,7 +6,7 @@
         <h5 class="mb-2">Product Lists</h5>
         <Link
           :href="route('products.create')"
-          class="p-2 mt-3 mb-4 text-white bg-green-500 rounded float-end"
+          class="p-1 mt-3 mb-2 text-white bg-green-500 rounded float-end"
           >Add Product</Link
         >
       </div>
