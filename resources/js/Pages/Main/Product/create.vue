@@ -17,10 +17,12 @@
               <div class="mb-3">
                 <label for="Product Name">Product Name</label>
                 <input type="text" v-model="form.name" class="w-full py-1" />
+                <div v-if="errors.name">{{ errors.name }}</div>
               </div>
               <div class="mb-3">
                 <label for="Product Price">Product Price</label>
                 <input type="text" v-model="form.price" class="w-full py-1" />
+                <div v-if="errors.price">{{ errors.price }}</div>
               </div>
 
               <div class="mb-3">
@@ -48,10 +50,13 @@
     import Nav from "@/Layouts/MainLayout.vue";
     import { Head, Link, useForm } from "@inertiajs/vue3";
 
+    defineProps({ errors: Object })
+
     const form = useForm({
     name: "",
     price: "",
     });
+
 
     const saveProduct = () => {
     const res = form.post(route('products.store'));
