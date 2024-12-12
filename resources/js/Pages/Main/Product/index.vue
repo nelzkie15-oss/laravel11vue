@@ -13,18 +13,18 @@
       <div class="mx-4 mt-4">
         <table class="w-full bg-white border border-gray-200 shadow">
           <thead>
-            <tr v-for="(item, index) in products" :key="index">
-              <td class="px-4 py-2 text-left border">{{ item.id }}</td>
-              <td class="px-4 py-2 text-left border">{{ item.name }}</td>
-              <td class="px-4 py-2 text-left border">{{ item.price }}</td>
-              <td class="px-4 py-2 text-left border">Action</td>
+            <tr>
+              <td class="px-4 py-2 text-left border">ID</td>
+              <td class="px-4 py-2 text-left border">NAME</td>
+              <td class="px-4 py-2 text-left border">PRICE</td>
+              <td class="px-4 py-2 text-left border">ACTION</td>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="px-4 py-2 border">1</td>
-              <td class="px-4 py-2 border">Apple</td>
-              <td class="px-4 py-2 border">140</td>
+            <tr v-for="(item, index) in products" :key="index">
+              <td class="px-4 py-2 border">{{ item.id }}</td>
+              <td class="px-4 py-2 border">{{ item.name }}</td>
+              <td class="px-4 py-2 border">{{ item.price }}</td>
               <td>
                 <Link
                   :href="route('products.show', item.id)"
