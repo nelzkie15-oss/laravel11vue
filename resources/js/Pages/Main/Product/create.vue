@@ -2,6 +2,10 @@
   <div>
     <Head title="Create Product" />
     <Nav>
+      <div v-if="$page.props.flash.message" class="alert">
+        {{ $page.props.flash.message }}
+      </div>
+
       <div class="mx-4 mt-4">
         <div class="flex justify-between">
           <h5 class="mb-2">Create Product</h5>
