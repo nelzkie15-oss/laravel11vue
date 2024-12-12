@@ -1,57 +1,64 @@
 <template>
- <div>
-    <Head title="Product"/>
+  <div>
+    <Head title="Product" />
     <Nav>
-        <div class="mx-4 mt-4">
-             <h5 class="mb-2">Product Lists</h5>
-             <Link :href="route('products.create')" class="p-2 mt-3 mb-4 text-white bg-green-500 rounded float-end ">Add Product</Link>
-        </div>
-    <div class="mx-4 mt-4">
+      <div class="mx-4 mt-4">
+        <h5 class="mb-2">Product Lists</h5>
+        <Link
+          :href="route('products.create')"
+          class="p-2 mt-3 mb-4 text-white bg-green-500 rounded float-end"
+          >Add Product</Link
+        >
+      </div>
+      <div class="mx-4 mt-4">
         <table class="w-full bg-white border border-gray-200 shadow">
-            <thead>
-                <tr v-for="(item, index) in products" :key="index">
-                    <td class="px-4 py-2 text-left border">{{ item.id }}</td>
-                    <td class="px-4 py-2 text-left border">{{ item.name }}</td>
-                    <td class="px-4 py-2 text-left border">{{ item.price }}</td>
-                   <td class="px-4 py-2 text-left border">Action</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="px-4 py-2 border">1</td>
-                    <td class="px-4 py-2 border">Apple</td>
-                    <td class="px-4 py-2 border">140</td>
-                    <td>
-                        <Link :href="route('products.show', item.id)"
-                         class="inline-block p-3 px-2 py-1 mt-3 mb-4 ml-2 text-white bg-blue-500 rounded me-2">
-                         show</Link>
+          <thead>
+            <tr v-for="(item, index) in products" :key="index">
+              <td class="px-4 py-2 text-left border">{{ item.id }}</td>
+              <td class="px-4 py-2 text-left border">{{ item.name }}</td>
+              <td class="px-4 py-2 text-left border">{{ item.price }}</td>
+              <td class="px-4 py-2 text-left border">Action</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border">1</td>
+              <td class="px-4 py-2 border">Apple</td>
+              <td class="px-4 py-2 border">140</td>
+              <td>
+                <Link
+                  :href="route('products.show', item.id)"
+                  class="inline-block p-3 px-2 py-1 mt-3 mb-4 ml-2 text-white bg-blue-500 rounded me-2"
+                >
+                  show</Link
+                >
 
-                         <Link :href="route('products.edit', item.id)"
-                         class="inline-block p-3 px-2 py-1 mt-3 mb-4 text-white bg-orange-500 rounded me-2">
-                         edit</Link>
+                <Link
+                  :href="route('products.edit', item.id)"
+                  class="inline-block p-3 px-2 py-1 mt-3 mb-4 text-white bg-orange-500 rounded me-2"
+                >
+                  edit</Link
+                >
 
-                         <button
-                        type="submit"
-                        class="px-5 py-2 mb-4 text-white bg-red-600 rounded"
-                        >
-                        Delete
-                        </button>
-                    </td>
-
-                </tr>
-            </tbody>
-
-
+                <button
+                  type="submit"
+                  class="px-5 py-2 mb-4 text-white bg-red-600 rounded"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
         </table>
-    </div>
+      </div>
     </Nav>
   </div>
 </template>
 <script setup>
-  import Nav from "@/Layouts/MainLayout.vue";
-  import { Head, Link } from "@inertiajs/vue3";
+import Nav from "@/Layouts/MainLayout.vue";
+import { Head, Link } from "@inertiajs/vue3";
 
-  defineProps({
-    products: Array,
-  });
+defineProps({
+  products: Array,
+});
 </script>
