@@ -9,10 +9,10 @@
     <div class="mx-4 mt-4">
         <table class="w-full bg-white border border-gray-200 shadow">
             <thead>
-                <tr>
-                    <td class="px-4 py-2 text-left border">Id</td>
-                    <td class="px-4 py-2 text-left border">Name</td>
-                    <td class="px-4 py-2 text-left border">Price</td>
+                <tr v-for="(item, index) in products" :key="index">
+                    <td class="px-4 py-2 text-left border">{{ item.id }}</td>
+                    <td class="px-4 py-2 text-left border">{{ item.name }}</td>
+                    <td class="px-4 py-2 text-left border">{{ item.price }}</td>
                    <td class="px-4 py-2 text-left border">Action</td>
                 </tr>
             </thead>
