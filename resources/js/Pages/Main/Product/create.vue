@@ -17,12 +17,12 @@
               <div class="mb-3">
                 <label for="Product Name">Product Name</label>
                 <input type="text" v-model="form.name" class="w-full py-1" />
-                <div v-if="errors.name">{{ errors.name }}</div>
+                <div v-if="errors.name" class="text-red-500">{{ errors.name }}</div>
               </div>
               <div class="mb-3">
                 <label for="Product Price">Product Price</label>
                 <input type="text" v-model="form.price" class="w-full py-1" />
-                <div v-if="errors.price">{{ errors.price }}</div>
+                <div v-if="errors.price" class="text-red-500">{{ errors.price }}</div>
               </div>
 
               <div class="mb-3">
