@@ -54,7 +54,7 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $product)
+    public function edit(Product $product)
     {
         return Inertia::render('Main/Product/edit', ['product' => $product]);
     }

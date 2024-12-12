@@ -61,7 +61,7 @@ import { Head, Link, useForm } from "@inertiajs/vue3";
 const props = defineProps({
      errors: Object,
      product: Object,
-    });
+    })
 
 const form = useForm({
   name: props.product.name,
