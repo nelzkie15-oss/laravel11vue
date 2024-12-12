@@ -2,6 +2,9 @@
   <div>
     <Head title="Product" />
     <Nav>
+     <div v-if="$page.props.flash.message" class="alert">
+        {{ $page.props.flash.message }}
+      </div>
       <div class="mx-4 mt-4">
         <h5 class="mb-2">Product Lists</h5>
         <Link
