@@ -1,1 +1,0 @@
-import{f as e,a,w as s,o,b as r,t as l}from"./app-BgaqbhB3.js";import{_ as n}from"./MainLayout-USBjzJsP.js";const m={__name:"aboutus",props:{title:String},setup(t){return(c,i)=>(o(),e("div",null,[a(n,null,{default:s(()=>[r("h2",null,"My "+l(t.title)+" Page",1)]),_:1})]))}};export{m as default};
