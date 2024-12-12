@@ -2,7 +2,7 @@
   <div>
     <Head title="Product" />
     <Nav>
-     <div v-if="$page.props.flash.message" class="alert">
+     <div v-if="$page.props.flash.message" class="px-4 py-2 mx-5 mt-4 bg-green-200 alert">
         {{ $page.props.flash.message }}
       </div>
       <div class="mx-4 mt-4">
