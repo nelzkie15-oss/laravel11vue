@@ -74,4 +74,5 @@ const updateProduct = () => {
     form.reset();
   }
 };
+
 </script>
