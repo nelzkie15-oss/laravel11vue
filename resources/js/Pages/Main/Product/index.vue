@@ -2,7 +2,10 @@
   <div>
     <Head title="Product" />
     <Nav>
-     <div v-if="$page.props.flash.message" class="px-4 py-2 mx-5 mt-4 bg-green-200 alert">
+      <div
+        v-if="$page.props.flash.message"
+        class="px-4 py-2 mx-5 mt-4 bg-green-200 alert"
+      >
         {{ $page.props.flash.message }}
       </div>
       <div class="mx-4 mt-4">
@@ -45,6 +48,7 @@
 
                 <button
                   type="submit"
+                  @click="deleteProduct(item.id)"
                   class="inline-block p-3 px-2 py-1 mt-3 mb-4 ml-2 text-white bg-red-600 rounded"
                 >
                   Delete
@@ -59,9 +63,16 @@
 </template>
 <script setup>
 import Nav from "@/Layouts/MainLayout.vue";
-import { Head, Link } from "@inertiajs/vue3";
+import { Head, Link, useForm} from "@inertiajs/vue3";
 
 defineProps({
   products: Array,
 });
+
+const form = useForm({});
+const deleteProduct = (productID) =>{
+    if(confirm("Are you sure you want to delete this product?")){
+        form.delete(route('products.delete', productID));
+    }
+}
 </script>
