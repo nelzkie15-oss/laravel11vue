@@ -22,11 +22,11 @@
                     <td class="px-4 py-2 border">Apple</td>
                     <td class="px-4 py-2 border">140</td>
                     <td>
-                        <Link :href="route('products.create')"
+                        <Link :href="route('products.show', item.id)"
                          class="inline-block p-3 px-2 py-1 mt-3 mb-4 ml-2 text-white bg-blue-500 rounded me-2">
                          show</Link>
 
-                         <Link :href="route('products.create')"
+                         <Link :href="route('products.edit', item.id)"
                          class="inline-block p-3 px-2 py-1 mt-3 mb-4 text-white bg-orange-500 rounded me-2">
                          edit</Link>
 
