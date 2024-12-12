@@ -15,7 +15,6 @@ class ProductController extends Controller
         return Inertia::render('Main/Product/index');
      }
 
-
     /**
      * Show the form for creating a new resource.
      */
