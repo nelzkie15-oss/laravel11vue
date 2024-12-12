@@ -47,4 +47,8 @@
 <script setup>
   import Nav from "@/Layouts/MainLayout.vue";
   import { Head, Link } from "@inertiajs/vue3";
+
+  defineProps({
+    products: Array,
+  });
 </script>
