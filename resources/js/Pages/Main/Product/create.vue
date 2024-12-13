@@ -59,7 +59,6 @@
     price: "",
     });
 
-
     const saveProduct = () => {
     const res = form.post(route('products.store'));
         if(res){
