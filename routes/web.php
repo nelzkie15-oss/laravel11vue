@@ -7,7 +7,8 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 
-Route::get('/about', [MainController::class, 'aboutUs'])->name('main.aboutUs');
+Route::get('/', [MainController::class, 'index'])->name('main.index');
+Route::get('/aboutUs', [MainController::class, 'aboutUs'])->name('main.aboutUs');
 Route::get('/contactus', [MainController::class, 'contactUs'])->name('main.contactUs');
 
 Route::resource('/products', ProductController::class);
