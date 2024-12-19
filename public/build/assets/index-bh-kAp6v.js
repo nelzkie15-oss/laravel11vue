@@ -1,1 +1,0 @@
-import{_ as a}from"./MainLayout-CaHPxJzG.js";import{f as t,a as o,w as n,o as r,b as s}from"./app-BfnqYjN1.js";const u={__name:"index",setup(l){return(_,e)=>(r(),t("div",null,[o(a,null,{default:n(()=>e[0]||(e[0]=[s("h2",null,"My Main Page ko",-1)])),_:1})]))}};export{u as default};
